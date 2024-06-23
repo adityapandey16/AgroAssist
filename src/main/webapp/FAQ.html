@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <script src="https://kit.fontawesome.com/82ad4ee6e7.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar" style="background-color: #009688;">
+            <a class="navbar-brand" style="margin-left: 50px;" href="#">
+                <img id="logo1" style="background-repeat: none; background-size: cover; border-radius: 50%;"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAEMoxgn3MRq6TABuLMQ3Kezk-XeA9noKPAt8isvfYKWa5PZ4pkpUP-xcvFAWYFbIFWBY&usqp=CAU"
+                    width="55" height="50" alt="">
+            </a>
+            <a class="navbar-brand" id="title-id" href="#"><span style="color: aliceblue;">AgriMeds</span></a>
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bold;"
+                    class="nav">
+                    <li class="nav-item">
+                        <a id="btn-hover" class="nav-link active" aria-current="page" href="/index.html">library</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="btn-hover" class="nav-link" href="#carouselExampleCaptions">community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="btn-hover" class="nav-link" href="#">Community</a>
+                    </li>
+                </ul>
+                <div class="dropdown" style="margin-right: 80px;">
+                    <button style="background-color: aliceblue; margin-left: auto; margin-right: auto;"
+                        class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <input type="image"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAFPklEQVRoge1ZW2xURRj+/nN22y4N1LItl1ZoEUorSFJZhLYQYdsGugp0a1NDjFBrCJLok6KoiaGa4AWENxPqhYsJiiUxLUS5uAtiUTGxPpigCG0tTamYtFWsbU8ve34f2tMLu9s9O3NSHuR72MyZ+W/fmX9m/jML3MVd/L9BVhrLzc11OBwOLxGVMvNiAHMAxBvjiqK4fT7f11b6tFllyO12lxLRfgBzmTmkTCAQ2AXAUgKWzEBBQcEbzPyaSfGrzFyjKMp+v9//p6xvaQJut/sVInpTQLWLmZ86f/785zL+pQjk5+cvB/AtxFMxQEQev9//lWgMiqjiMN6G3DpSmflDl8tlFzUgTKCwsPBBAG4zsmlOBVvy7PiowoEteUGxzk1ISPCKxiH89nRdL55oPM2pYHWmijVZNqQ5R99TelIMYu2EDy70jxX3ADguEocwAWZeTTR+CRlBr860IT0p/ORuWm5H3wDj4+8GAABEtEQ0Dpn8nQ+Ef9ORUL5ydCaYOVk0CGECRJQEAAefdoiawKbldiOVhAnI7ELikQdjiqii7DZ6xyFEgD/NeHRZqqZZFcSKOVovH1voEdEVnAE68JanI65k6fg9/UD1FVRVXwmrFWr8MZcdu4s6HGBUiUQinEIKMZ4riBnXRyM/oRFq/Nn8GBBCV69mIFQL8bGFHjDeR0JGKkiRKwiZddy6egNM2+iJ305Hqy7lnE9tuAIgU8YGCL9S0clFouqyu1CdpD7A+EZGXY4AKZ9J6QMAo1oqBGn/pzacg8mqNAQukOfkGhn/8gdZQN8KoF1AsxNEW2XdSxOg9V80QadSAH9FodYJ0r1UdKJB2r+sAQN8dn0GujuvIs45saDWDjiSM6wIHrD4XogPgBGXBMSnALFOQI0bGghoQF8H0N0GaO2g7UN+y6rLYjp7b5UQUzETloJx73BUrcT4CUBN4pRpNccfP94fzqf1BEyAtoMKD68rZdAegO+LIN5ITC/5Kk6HvL2YdAI6CGvj1u4D8EI0tgn07qrmnJ2VlZX62H41yhiD4K3rdnXPcZ8IZDzy3mJn12CWrXHCj6QXlXWBmypWCrjKa7mn1fF7TaNvbKfwDBTX9awAaB+AlfVn6nDj2nXMnR032Jy1OSyBOnUmXrdnhxzzlY8vgwqPFIU2wlzirzhbYzxGvY16vuTYjXW9VQB9Dwy9yfQlmQABLX9ots0du0PqDULBbsqJ1l0wiPaXVZeNlMFREdh46d+ZMVO1cwRsw5jZc6bMwILs+wEAR3+egQcaD+GIVoq2wCy0BWbhiFaKnPZdGLRZ8g00r6O7a+RKx/RHfckP/zj1fvUCwlSfi/JcUFQV1+ov45eWQVS0FAEYTYPF2ZckYh4PIhRj+B7JHAFm0i9qRzFR6UxAVk42UjLScP1yA9pbb6K3qwcA4Jg6BdOTe8aJ357zt2PCNUG8zGiaIuC9qD3JwDozstOciVjy8ENB/d1NnyDM3wbRg5FqNCOugbJqVnWg0iLXVmHkLIhIoH92n5uASKdlRJAtUdbECBhoM9omUkjfYMWBrcbOhz4w4jdonzd9DgAg8I9GO/I2yhSc0AJQ4y04AwwQao1mZAKEeVb4VONXQLHPtsASNU13JJwwnswcZJYkL5ENsdPLLbDDz48try2tRs2g8HDRXgbvENElxju+ijMvj+2b9MvdVc05O0G8V0B1z6rrua/e3jnpM2Cg4NBaLxHtZWDBRHIENICww1d+pjbM+J2Dq8plT4hJ9hKhmMEuwtAnJQOtBKoH6TV/ax219c/UD4Sz8R/nt4tpr/wvngAAAABJRU5ErkJggg=="
+                            width="30" height="30">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">SignUp</a>
+                        <a class="dropdown-item" href="#">Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/Blog.html">Community</a></li>
+                <li class="breadcrumb-item active" aria-current="page">All Articles</li>
+            </ol>
+        </nav>
+
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline" style="display: block;  margin-left: auto; margin-right: auto;">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+    </div>
+
+
+
+    <div class="text-center">
+        <h2 class="mt-5 mb-5">Frequently Asked Questions</h2>
+    </div>
+    <section class="container my-5" id="maincontent">
+        <section id="accordion">
+            <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                aria-controls="faq-17" aria-expanded="false" data-toggle="collapse" href="#faq-17" role="button">
+                <div class="position-relative">
+                    <h2 class="h4 m-0 pr-3">
+                        What if I want custom gear?
+                    </h2>
+                    <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </div>
+            </a>
+            <div class="collapse" id="faq-17">
+                <div class="card card-body border-0 p-0">
+                    <p>Custom gear can be ordered through our contact form. Additional fees may apply.</p>
+
+                </div>
+            </div>
+
+            <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                aria-controls="faq-18" aria-expanded="false" data-toggle="collapse" href="#faq-18" role="button">
+                <div class="position-relative">
+                    <h2 class="h4 m-0 pr-3">
+                        What is the official mission statement?
+                    </h2>
+                    <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </div>
+            </a>
+
+            <div class="collapse" id="faq-18">
+                <div class="card card-body border-0 p-0">
+                    <p>Our official mission statement is lorem ipsum dolor sit.</p>
+                    <p>
+                    </p>
+                </div>
+            </div>
+
+            <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top"
+                aria-controls="faq-19" aria-expanded="false" data-toggle="collapse" href="#faq-19" role="button">
+                <div class="position-relative">
+                    <h2 class="h4 m-0 pr-3">
+                        What is the purpose of LunarXP?
+                    </h2>
+                    <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </div>
+            </a>
+            <div class="collapse" id="faq-19">
+                <div class="card card-body border-0 p-0">
+                    <p>The purpose of LunarXP is to give you the best Mars experience!</p>
+                    <p>
+                    </p>
+                </div>
+            </div>
+
+            <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                aria-controls="faq-20" aria-expanded="false" data-toggle="collapse" href="#faq-20" role="button">
+                <div class="position-relative">
+                    <h2 class="h4 m-0 pr-3">
+                        What is the best email to reach you at?
+                    </h2>
+                    <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </div>
+            </a>
+
+            <div class="collapse" id="faq-20">
+                <div class="card card-body border-0 p-0">
+                    <p>The best email for any inquiries is email@email.com!</p>
+                    <p>
+                    </p>
+                </div>
+            </div>
+
+            <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                aria-controls="faq-21" aria-expanded="false" data-toggle="collapse" href="#faq-21" role="button">
+                <div class="position-relative">
+                    <h2 class="h4 m-0 pr-3">
+                        Where can I read more about this company?
+                    </h2>
+                    <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </div>
+            </a>
+
+            <div class="collapse" id="faq-21">
+                <div class="card card-body border-0 p-0">
+                    <p>Lorem ipsum dolor sit!</p>
+                    <p>
+                    </p>
+                </div>
+            </div>
+
+            <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top"
+                aria-controls="faq-22" aria-expanded="false" data-toggle="collapse" href="#faq-22" role="button">
+                <div class="position-relative">
+                    <h2 class="h4 m-0 pr-3">
+                        What is the best time to call?
+                    </h2>
+                    <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </div>
+            </a>
+            <div class="collapse" id="faq-22">
+                <div class="card card-body border-0 p-0">
+                    <p>The best time to call is 24/7! We are always available to answer any questions.</p>
+                    <p>
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+    </section>
+
+
+    <section id="contactus">
+
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3"
+                style="background-color: #00796B; padding-left: 10px; padding-right: 10px;">
+                <div class="icons">
+                    <a href="#" class="fab fa-twitter fa-lg" style="color:#f1f1f1"></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="fab fa-instagram fa-lg" style="color:#f1f1f1"></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="fab fa-linkedin fa-lg" style="color:#f1f1f1"></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="fab fa-google fa-lg" style="color:#f1f1f1;"></a>&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </section>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+body{
+    font-family: Sans,Arial,Helvetica,Liberation Sans,sans-serif;
+}
+
+
+#btn-hover {
+    color: white;
+
+
+}
+
+
+ul{
+    display: block;
+    margin-left: auto;
+    margin-right: 60px;
+    /* margin-right: auto; */
+}
+
+#logo1{
+    transition: transform .2s; /* Animation */
+
+}
+
+img:hover {
+    transform: scale(1.4); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  #title-id {
+    /* margin-left: 50px; */
+    font-size: 30px;
+    /* margin-bottom: -10px; */
+    margin-top: -10px;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  }
+
+
+  .text-secondary {
+    color: #3d5d6f;
+  }
+  
+  .h4,
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    color: #333;
+  }
+  
+  .fa,
+  .fas {
+    font-family: 'FontAwesome';
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-style: normal;
+  }
+  
+  .right-0 {
+    right: 0;
+  }
+  
+  .top-0 {
+    top: 0;
+  }
+  
+  .h-100 {
+    height: 100%;
+  }
+  
+  a.text-secondary:focus,
+  a.text-secondary:hover {
+    text-decoration: none;
+    color: #22343e;
+  }
+  
+  #accordion .fa-plus {
+    transition: -webkit-transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  }
+  
+  #accordion a[aria-expanded=true] .fa-plus {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
