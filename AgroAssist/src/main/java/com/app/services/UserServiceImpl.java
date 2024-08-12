@@ -1,36 +1,35 @@
 package com.app.services;
 
-import javax.transaction.Transactional;
-
-import org.modelmapper.ModelMapper;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-//import com.app.dto.UserDTO;
 import com.app.entities.User;
-import com.app.repos.UserRepository;
+import com.app.repositories.UserRepository;
+import com.app.services.UserService;
+
 @Service
-@Transactional
 public class UserServiceImpl implements UserService {
-	
-	@Autowired
-	private UserRepository userRepo;
-	@Autowired
-	private ModelMapper mapper;
-	@Override
-	public User getUser(String email) {
-		// TODO Auto-generated method stub
-		User user = userRepo.findByEmail(email);
-		//UserDTO userDTO = mapper.map(user, UserDTO.class);
-		return user;
-	}
 
-	@Override
-	public User getUser(String email, String password) {
-		// TODO Auto-generated method stub 
-		User user = userRepo.findByEmailAndPassword(email, password);
-		//UserDTO userDTO = mapper.map(user, UserDTO.class);
-		return user;
-	}
+    @Autowired
+    private UserRepository userRepository;
 
+    @Override
+    public User saveUser(User user) {
+        return userRepository.save(user);
+    }
+
+    @Override
+    public List<User> getAllUsers() {
+        return userRepository.findAll();
+    }
+
+    @Override
+    public User getUserById(Long id) {
+        return userRepository.findById(id).orElse(null);
+    }
+
+    @Override
+    public void deleteUser(Long id) {
+        userRepository.deleteById(id);
+    }
 }
