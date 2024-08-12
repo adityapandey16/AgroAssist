@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 11
+Implementation-Title: spring_boot_backend_template
+Implementation-Version: 0.0.1
+Created-By: Maven Integration for Eclipse
+
